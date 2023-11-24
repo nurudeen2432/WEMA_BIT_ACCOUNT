@@ -7,13 +7,13 @@ namespace Wema.BIT.User
     {
         public static void Main(string[] args)
         {
-            List<Payment> payment = new List<Payment>()
+            List<Transaction> payment = new List<Transaction>()
             {
-                new Payment() {Id =1,UserId=1, Amount=1233},
-                new Payment() {Id =2,UserId=2, Amount=1233},
-                new Payment() {Id =3,UserId=3, Amount=1233},
-                new Payment() {Id =4,UserId=4, Amount=1233},
-                new Payment() {Id =5,UserId=5, Amount=1233}
+                new Transaction() {Id =1,UserId=1, Amount=1233},
+                new Transaction() {Id =2,UserId=2, Amount=1233},
+                new Transaction() {Id =3,UserId=3, Amount=1233},
+                new Transaction() {Id =4,UserId=4, Amount=1233},
+                new Transaction() {Id =5,UserId=5, Amount=1233}
             };
 
             
@@ -57,10 +57,10 @@ namespace Wema.BIT.User
         public string FirstName { set; get; }
         public string LastName { set; get; }
         public string Email { set; get; }
-        public List<Payment> Payments { set; get; }
+        public List<Transaction> Payments { set; get; }
     }
 
-    public class Payment
+    public class Transaction
     {
 
         public int Id { set; get; }
